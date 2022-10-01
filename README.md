@@ -1,2 +1,2 @@
 # Hyper
-This is a new Game engine I m working on!
+This is a game engine in very early development so be patient to use it!
