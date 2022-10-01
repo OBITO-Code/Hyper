@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Hyper\Log.h" />
     <ClInclude Include="src\Hyper.h" />
     <ClInclude Include="src\Hyper\Application.h" />
     <ClInclude Include="src\Hyper\Core.h" />
     <ClInclude Include="src\Hyper\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Hyper\Log.cpp" />
     <ClCompile Include="src\Hyper\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -66,6 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>HY_PLATFORM_WINDOWS;HY_BUILD_DLL;_WINDLL;%(PreprocessorDefination)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Hyper\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,6 +83,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>HY_PLATFORM_WINDOWS;HY_BUILD_DLL;_WINDLL;%(PreprocessorDefination)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Hyper\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
