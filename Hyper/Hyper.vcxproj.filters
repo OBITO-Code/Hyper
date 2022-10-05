@@ -1,42 +1,48 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Hyper">
+      <UniqueIdentifier>{2D285A0D-993C-82BE-62BE-251ECE917EEF}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Hyper\Events">
+      <UniqueIdentifier>{713F65E0-5DA2-F484-0628-2D3BF269C007}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Hyper\Core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Hyper.h" />
     <ClInclude Include="src\Hyper\Application.h">
-      <Filter>Header Files</Filter>
+      <Filter>Hyper</Filter>
     </ClInclude>
-    <ClInclude Include="src\Hyper.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Hyper\Core.h">
+      <Filter>Hyper</Filter>
     </ClInclude>
     <ClInclude Include="src\Hyper\EntryPoint.h">
-      <Filter>Header Files</Filter>
+      <Filter>Hyper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hyper\Events\ApplicationEvent.h">
+      <Filter>Hyper\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hyper\Events\Event.h">
+      <Filter>Hyper\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hyper\Events\KeyEvent.h">
+      <Filter>Hyper\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hyper\Events\MouseEvent.h">
+      <Filter>Hyper\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Hyper\Log.h">
-      <Filter>Header Files</Filter>
+      <Filter>Hyper</Filter>
     </ClInclude>
+    <ClInclude Include="src\hypch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Hyper\Application.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Hyper</Filter>
     </ClCompile>
     <ClCompile Include="src\Hyper\Log.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Hyper</Filter>
     </ClCompile>
+    <ClCompile Include="src\hypch.cpp" />
   </ItemGroup>
 </Project>
